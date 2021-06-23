@@ -1,3 +1,6 @@
-.person {
-  background-color: white
+.idCard {
+  background-color: grey;
+  padding-bottom: 5px;
+
+  width: 120px;
 }

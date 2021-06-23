@@ -1,1 +1,10 @@
+/* .person {
+  background-color: grey
+} */
 
+img {
+  /* float: left; */
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
