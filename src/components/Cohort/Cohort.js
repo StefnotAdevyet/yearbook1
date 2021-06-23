@@ -12,8 +12,10 @@ class Cohort extends React.Component {
   render() {
     console.log('state from cohort: ', this.state)
     return (
-      <div>
-        <Person teacher={this.state.staff[0]}/>
+
+      <div className="person">
+        {this.state.staff.map((person, i) =>
+        <Person teacher={this.state.staff[i]} />)}
       </div>
     );
   }
