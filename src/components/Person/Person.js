@@ -1,11 +1,24 @@
 import React from 'react';
 import './Person.css';
 
-// PERSON COMPONENT CODE GOES HERE
-function Person(props) {
-  return (
-    <div>test</div>
-  )
-};
+
+class Person extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = props
+  }
+
+  render() {
+    console.log('props from person ', this.state.teacher)
+    return (
+      <div>
+        <img src={this.state.teacher.photo}></img>
+        <span>{this.state.teacher.name}</span>
+        <span>{this.state.teacher.quote}</span>
+        <span>{this.state.teacher.superlative}</span>
+      </div>
+    );
+  }
+}
 
 export default Person;
