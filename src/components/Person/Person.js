@@ -13,7 +13,6 @@ class Person extends React.Component {
     return (
       <div className="person">
         <img src={this.state.teacher.photo} />
-        <br />
         <span>{this.state.teacher.name}</span>
         <span>{this.state.teacher.quote}</span>
         <span>{this.state.teacher.superlative}</span>

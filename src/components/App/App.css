@@ -24,3 +24,8 @@ h1 {
   padding: 10px;
   color: limegreen;
 }
+
+.cohort {
+  display: flex;
+  flex-direction: column;
+}
