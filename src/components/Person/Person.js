@@ -13,9 +13,9 @@ class Person extends React.Component {
     return (
       <div className="person">
         <img src={this.state.teacher.photo} />
-        <span>{this.state.teacher.name}</span>
-        <span>{this.state.teacher.quote}</span>
-        <span>{this.state.teacher.superlative}</span>
+        <span className="name">{this.state.teacher.name}</span>
+        <span className="quote">'{this.state.teacher.quote}'</span>
+        <span className="superlative">{this.state.teacher.superlative}</span>
       </div>
     );
   }

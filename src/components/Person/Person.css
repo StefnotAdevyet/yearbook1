@@ -2,7 +2,6 @@
 .person {
   display: flex;
   flex-direction: column;
-  background-color: antiquewhite;
   align-items: center;
   padding-bottom: 20px;
   align-items: center;
@@ -11,4 +10,21 @@
 img {
   height: 240px;
   width: 240px
+}
+
+
+.quote {
+  font: italic small-caps bold 16px/2 cursive;
+  font-size: 20px
+}
+
+.name {
+  font-weight: bold;
+  font-size: 32px;
+  font-family: italic
+}
+
+.superlative {
+  font: italic small-caps bold;
+  font-size: 10px;
 }
