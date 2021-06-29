@@ -10,12 +10,12 @@ class Cohort extends React.Component {
   }
 
   render() {
-    console.log('state from cohort: ', this.state)
+    console.log('state from cohort: ', Object.values(this.state)[0])
     return (
 //iterates over array of people and renders a person component based on the information
       <div>
-        {this.state.staff.map((person, i) =>
-        <Person className="idCard" teacher={this.state.staff[i]} />)}
+        {Object.values(this.state)[0].map((person, i) =>
+        <Person className="idCard" person={Object.values(this.state)[0][i]} />)}
         <br />
       </div>
     );

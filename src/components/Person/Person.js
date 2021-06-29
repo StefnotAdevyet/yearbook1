@@ -9,13 +9,13 @@ class Person extends React.Component {
   }
 
   render() {
-    console.log('props from person ', this.state.teacher)
+    console.log('props from person ', this.state.person)
     return (
       <div className="person">
-        <img src={this.state.teacher.photo} />
-        <span className="name">{this.state.teacher.name}</span>
-        <span className="quote">'{this.state.teacher.quote}'</span>
-        <span className="superlative">{this.state.teacher.superlative}</span>
+        <img src={this.state.person.photo} />
+        <span className="name">{this.state.person.name}</span>
+        <span className="quote">'{this.state.person.quote}'</span>
+        <span className="superlative">{this.state.person.superlative}</span>
       </div>
     );
   }
